@@ -1,0 +1,81 @@
+{
+
+  "recharge": "Recharge",
+
+  "otherPayments": "Other Payments",
+  "dstvPayments": "DStv Payments",
+  "azamPayments": "AZAM Payments",
+  "lukuPayments": "LUKU Payments",
+  "tukuzaPayments": "TUKUZA Payments",
+
+  "loanPayments": "Loan Payments",
+  "loanStatusTrack": "Loan Status Track",
+  "loanApplication": "Loan Application",
+
+  "agent": "Agent",
+  "cashOutBy": "Cash Out by",
+
+  "process": "Process",
+  "enterAmount": "Enter amount",
+  "enterAccNo": "Enter account number",
+  "mno": "Mobile Network Operators",
+  "otherBanks": "Other Banks",
+  "pbzAcc": "PBZ Accounts",
+  "fundTransferTo": "Fund transfer to",
+
+  "multiAccOps": "Multiple Accounts Operations",
+  "closeAcc": "Close Account",
+  "openAcc": "Open Account",
+  "accManagement": "Account Management",
+  "cardFreeze": "Card Freeze",
+  "onlinePurchases": "Online Purchases",
+  "cardRequest": "Card Request",
+  "cardsManagement": "Cards Management",
+  "pinChange": "PIN Change",
+  "pinReset": "PIN Reset",
+
+  "airtimeTopUp": "Airtime Top-Up",
+  "utilityPayments": "Utility Payments",
+  "loanManagement": "Loan Management",
+  "cashOut": "Cash Out",
+  "fundTransfer": "Fund Transfer",
+  "fullStatement": "Full Statement",
+  "miniStatement": "Mini Statement",
+
+  "createAcc": "Create Account",
+  "bankSubTitle": "We now offer traditional banking...",
+  "bankTitle": "Conventional Banking",
+  "languages": "Languages",
+  "agents": "Agents",
+  "availableBalance": "Available Bal:",
+  "actualBalance": "Actual Bal:",
+  "accountNo": "Acc no:",
+  "accountsTitle": "ACCOUNTS",
+  "accounts": "Accounts",
+  "transactions": "Transactions",
+  "home": "Home",
+
+  "login": "LOGIN",
+  "register": "REGISTER",
+  "socialMedia": "SOCIAL MEDIA",
+  "termsAndConditions": "TERMS & CO'",
+  "call": "CALL",
+  "chat": "CHAT",
+  "faq": "FAQ",
+  "support": "SUPPORT",
+  "@support": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "atms": "ATMs",
+  "products": "Products",
+  "forex": "Forex Rates",
+  "branches": "Branches",
+  "quickInfo": "QUICK INFO",
+  "@quickInfo": {
+    "description": "Displays title for available information"
+  },
+  "helloWorld": "Hi",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  }
+}

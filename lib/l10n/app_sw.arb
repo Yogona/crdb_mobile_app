@@ -1,0 +1,78 @@
+{
+
+  "recharge": "Nunua Salio",
+
+  "otherPayments": "Malipo Mengine",
+  "dstvPayments": "Malipo DStv",
+  "azamPayments": "Malipo AZAM",
+  "lukuPayments": "Malipo LUKU",
+  "tukuzaPayments": "Malipo TUKUZA",
+
+  "loanPayments": "Malipo ya mkopo",
+  "loanStatusTrack": "Ufuatiliaji wa Mkopo",
+  "loanApplication": "Maombi ya Mkopo",
+
+  "agent": "Wakala",
+  "cashOutBy": "Toa Fedha kupitia",
+
+  "process": "Chakata",
+  "enterAmount": "Ingiza kiasi",
+  "enterAccNo": "Ingiza nambari ya akaunti",
+  "mno": "Mitandao ya Simu",
+  "otherBanks": "Benki zingine",
+  "pbzAcc": "Akaunti za PBZ",
+  "fundTransferTo": "Hamisha fedha kwenda",
+
+  "multiAccOps": "Operesheni nyingi za Akaunti",
+  "closeAcc": "Funga Akaunti",
+  "openAcc": "Fungua Akaunti",
+  "accManagement": "Usimamizi wa Akaunti",
+  "cardFreeze": "Kufungia Kadi",
+  "onlinePurchases": "Ununuzi mtandaoni",
+  "cardRequest": "Ombi la Kadi",
+  "cardsManagement": "Usimamizi wa Kadi",
+  "pinChange": "Badilisha PIN",
+  "pinReset": "Weka upya PIN",
+
+  "airtimeTopUp": "Nunua salio",
+  "utilityPayments": "Malipo ya matumizi",
+  "loanManagement": "Usimamizi wa Mikopo",
+  "cashOut": "Toa Pesa",
+  "fundTransfer": "Hamisha Fedha",
+  "fullStatement": "Taarifa Kamili",
+  "miniStatement": "Taarifa Fupi",
+
+  "createAcc": "Tengeneza Akaunti",
+  "bankSubTitle": "Sasa tunatoa huduma za kibenki za jadi...",
+  "bankTitle": "Benki ya Kawaida",
+  "languages": "Lugha",
+  "agents": "Mawakala",
+  "availableBalance": "Salio lililopo:",
+  "actualBalance": "Salio halisi:",
+  "accountNo": "Namba ya akaunti:",
+  "accountsTitle": "AKAUNTI",
+  "accounts": "Akaunti",
+  "transactions": "Miamala",
+  "home": "Nyumbani",
+
+  "login": "INGIA",
+  "register": "JISAJILI",
+  "socialMedia": "MITANDAO",
+  "termsAndConditions": "VIGEZO",
+  "call": "SIMU",
+  "chat": "MAZUNGUMZO",
+  "faq": "FAQ",
+  "support": "MSAADA",
+  "@support": {
+    "description": ""
+  },
+  "atms": "ATMs",
+  "products": "Bidhaa",
+  "forex": "Viwango Fedha",
+  "branches": "Matawi",
+  "quickInfo": "TAARIFA ZA HARAKA",
+  "@quickInfo": {
+    "description": ""
+  },
+  "helloWorld": "Mambo"
+}
