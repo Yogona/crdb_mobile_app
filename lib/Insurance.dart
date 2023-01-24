@@ -1,9 +1,11 @@
 import 'package:crdb_mobile_app/shared/constraints.dart';
 import 'package:crdb_mobile_app/widgets/CircleContainer.dart';
 import 'package:crdb_mobile_app/widgets/CustomCard.dart';
+import 'package:crdb_mobile_app/widgets/DecoratedSelection.dart';
 import 'package:crdb_mobile_app/widgets/GlowingIcon.dart';
 import 'package:crdb_mobile_app/widgets/GradientButton.dart';
 import 'package:crdb_mobile_app/widgets/InflatedIconButton.dart';
+import 'package:crdb_mobile_app/widgets/fading_line.dart';
 import 'package:flutter/material.dart';
 
 class Insurance extends StatefulWidget {
@@ -99,16 +101,14 @@ class _InsuranceState extends State<Insurance> {
                   children: [
                     Column(
                       children: [
-                        GestureDetector(
+                        CustomCard(
                           onTap: (){
                             setState(() {
                               display = Display.history;
                             });
                           },
-                          child: const CustomCard(
-                            child: Icon(
-                                Icons.history_outlined
-                            ),
+                          child: const Icon(
+                              Icons.history_outlined
                           ),
                         ),
                         const SizedBox(height: 10.0,),
@@ -119,16 +119,14 @@ class _InsuranceState extends State<Insurance> {
                     ),
                     Column(
                       children: [
-                        GestureDetector(
+                        CustomCard(
                           onTap: (){
                             //We pop twice because we want to reach PIN screen
                             Navigator.of(context).pop();
                             Navigator.of(context).pop();
                           },
-                          child: const CustomCard(
-                            child: Icon(
-                                Icons.login
-                            ),
+                          child: const Icon(
+                              Icons.login
                           ),
                         ),
                         const SizedBox(height: 10.0,),
@@ -139,16 +137,14 @@ class _InsuranceState extends State<Insurance> {
                     ),
                     Column(
                       children: [
-                        GestureDetector(
+                        CustomCard(
                           onTap: (){
                             setState(() {
                               display = Display.lodge;
                             });
                           },
-                          child: const CustomCard(
-                            child: Icon(
-                                Icons.style
-                            ),
+                          child: const Icon(
+                              Icons.style
                           ),
                         ),
                         const SizedBox(height: 10.0,),
@@ -256,26 +252,7 @@ class LodgeClaim extends StatelessWidget {
                 ),
 
                 const SizedBox(height: vGap,),
-                Container(
-                  height: 1.0,
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(
-                        stops: [0.0, 0.5, 1.0],
-                        colors: [
-                          Color.fromRGBO(0, 200, 0, .0),
-                          Color.fromRGBO(0, 255, 0, 1),
-                          Color.fromRGBO(0, 200, 0, .0),
-                        ],
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color.fromRGBO(0, 180, 0, 1),
-                        spreadRadius: 1.0,
-                        blurRadius: 5.0,
-                      )
-                    ]
-                  ),
-                ),
+                const FadingLine(),
 
                 const SizedBox(height: vGap,),
                 Column(
@@ -434,41 +411,21 @@ class _InsuranceDetailsState extends State<InsuranceDetails> {
               const Text(
                   "Insurance class"
               ),
-              Stack(
-                children: [
-                  DropdownButtonFormField(
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                    ),
-                      items: const [
-                        DropdownMenuItem(
-                          value: "private",
-                          child: Text(
-                              "Private"
-                          ),
-                        ),
-                        DropdownMenuItem(
-                          value: "motorcycle",
-                          child: Text(
-                              "Motorcycle"
-                          ),
-                        )
-                      ],
-                      onChanged: (val){
 
-                      }
-                  ),
-                  Container(
-                    decoration: const BoxDecoration(
-                        color: Colors.green,
-                        borderRadius: BorderRadius.horizontal(
-                          left: Radius.circular(4.0),
-                        )
+              const DecoratedSelection(
+                items: [
+                  DropdownMenuItem(
+                    value: "private",
+                    child: Text(
+                        "Private"
                     ),
-                    width: 5.0,
-                    height: 48.0,
                   ),
+                  DropdownMenuItem(
+                    value: "motorcycle",
+                    child: Text(
+                        "Motorcycle"
+                    ),
+                  )
                 ],
               ),
 

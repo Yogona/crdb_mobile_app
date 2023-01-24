@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
 class Pill extends StatelessWidget {
-  const Pill({Key? key, required this.text, this.normalTextColor = Colors.black, this.inflatedTextColor = Colors.white, this.topLeftColor = const Color.fromRGBO(0, 200, 0, 1), this.bottomRightColor = const Color.fromRGBO(0, 180, 0, 1), this.isInflated = false}) : super(key: key);
+  const Pill({Key? key, this.fontSize, this.onTap, required this.text, this.normalTextColor = Colors.black, this.inflatedTextColor = Colors.white, this.topLeftColor = const Color.fromRGBO(0, 200, 0, 1), this.bottomRightColor = const Color.fromRGBO(0, 180, 0, 1), this.isInflated = false}) : super(key: key);
   final String text;
+  final double? fontSize;
   final Color topLeftColor;
   final Color bottomRightColor;
   final bool isInflated;
   final Color inflatedTextColor;
   final Color normalTextColor;
+  final Function? onTap;
 
   @override
   Widget build(BuildContext context) {
     return (isInflated)?Container(
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
           horizontal: 20.0,
           vertical: 10.0
       ),
@@ -35,15 +37,22 @@ class Pill extends StatelessWidget {
         child: Text(
           text,
           style: TextStyle(
-            color: inflatedTextColor
+            color: inflatedTextColor,
+            fontSize: fontSize
           ),
         ),
       ),
     ):
-    Text(
-      text,
-      style: TextStyle(
-        color: normalTextColor
+    GestureDetector(
+      onTap: (){
+        onTap?.call();
+      },
+      child: Text(
+        text,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+            color: normalTextColor
+        ),
       ),
     );
   }

@@ -43,6 +43,8 @@ dependencies:
   qrscan: ^0.3.3
   permission_handler: ^10.2.0
   flutter_share: ^2.0.0
+  switcher_button: ^0.0.4
+  font_awesome_flutter: ^10.3.0
 
 dev_dependencies:
   flutter_test:
@@ -74,7 +76,7 @@ flutter:
    - assets/images/flags/square_128/JAPAN_copy.png
    - assets/images/flags/square_128/britain_copy.png
    - assets/images/flags/square_128/Switzerland_copy.png
-#   - assets/images/flags/square_128/Canada_copy.png
+   - assets/logo/crdb_logo.jpeg
 #   - assets/images/flags/square_128/australia_copy.png
 
   # An image asset can refer to one or more resolution-specific "variants", see

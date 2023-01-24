@@ -4,9 +4,8 @@ import 'package:crdb_mobile_app/widgets/InflatedIconButton.dart';
 import 'package:crdb_mobile_app/widgets/PinDot.dart';
 import 'package:crdb_mobile_app/widgets/RoundElevatedButton.dart';
 import 'package:flutter/material.dart';
-
 import 'Locations.dart';
-import 'More.dart';
+import 'more.dart';
 import 'ScanToPay.dart';
 
 class BottomBar extends StatefulWidget {

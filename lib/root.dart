@@ -1,4 +1,8 @@
+import 'package:crdb_mobile_app/screens/cashout.dart';
 import 'package:crdb_mobile_app/screens/overview.dart';
+import 'package:crdb_mobile_app/screens/payments.dart';
+import 'package:crdb_mobile_app/screens/settings.dart';
+import 'package:crdb_mobile_app/screens/transfers.dart';
 import 'package:crdb_mobile_app/widgets/DroppedContainer.dart';
 import 'package:crdb_mobile_app/widgets/InflatedIconButton.dart';
 import 'package:crdb_mobile_app/widgets/Pill.dart';
@@ -11,60 +15,26 @@ class Root extends StatefulWidget {
   @override
   State<Root> createState() => _RootState();
 }
+enum Display{
+  overview, transfers
+}
 
 class _RootState extends State<Root> {
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
+    return const DefaultTabController(
         length: 5,
         child: Scaffold(
-          appBar: AppBar(
-            elevation: 0.0,
-            toolbarHeight: 70.0,
-            leading: Container(
-              margin: const EdgeInsets.only(
-                  left: 10.0
-              ),
-              child: CircleAvatar(
-                radius: 100.0,
-                backgroundImage: Image.network(
-                    "https://th.bing.com/th/id/R.0771e184dbb04e47c667d38c6e6bb6df?rik=sprfZaNYE%2bvU1A&riu=http%3a%2f%2fgymkhana.iitb.ac.in%2f%7esports%2fimages%2fprofile.png&ehk=QeYO2n9hr6iOCpGjMhFFocMp3a84UVyrE1IADVb3oHA%3d&risl=&pid=ImgRaw&r=0"
-                ).image,
-              ),
-            ),
-            title: const Text(
-                "Habari za Usiku Yona"
-            ),
-            actions: [
-              InflatedIconButton(
-                onPressed: (){
-
-                },
-                child: const Icon(
-                  Icons.chat_bubble_outline_rounded,
-                  size: 20.0,
-                ),
-              )
-            ],
-          ),
-          body: const TabBarView(
+          body: TabBarView(
             children: [
               Overview(),
-              Text(
-                "Transfers"
-              ),
-              Text(
-                  "Cashout"
-              ),
-              Text(
-                  "Payments"
-              ),
-              Text(
-                  "Settings"
-              ),
+              SafeArea(child: Transfers()),
+              Cashout(),
+              SafeArea(child: Payments()),
+              SafeArea(child: Settings()),
             ],
           ),
-          bottomNavigationBar: const TabBar(
+          bottomNavigationBar: TabBar(
             labelPadding: EdgeInsets.only(
               bottom: 30.0,
             ),
@@ -117,7 +87,7 @@ class _RootState extends State<Root> {
               ),
             ],
           ),
-        )
+        ),
     );
   }
 }

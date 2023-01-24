@@ -57,6 +57,9 @@ class _CRDBState extends State<CRDB> {
         bottomNavigationBarTheme: bottomNavTheme,
         tabBarTheme: const TabBarTheme(
           labelColor: Colors.black
+        ),
+        bottomSheetTheme: BottomSheetThemeData(
+          backgroundColor: const Color.fromRGBO(200, 200, 200, 1.0)
         )
       ),
       home: const Wrapper(),

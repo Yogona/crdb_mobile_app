@@ -50,31 +50,29 @@ class _MoreState extends State<More> {
           vertical: 30.0
         ),
         children: [
-          GestureDetector(
+          CustomCard(
             onTap: () async {
               await share();
             },
-            child: CustomCard(
-              child: Row(
-                children: const [
-                  Expanded(
-                    child: GlowingIcon(
-                      icon: Icons.info_outline,
-                    ),
+            child: Row(
+              children: const [
+                Expanded(
+                  child: GlowingIcon(
+                    icon: Icons.info_outline,
                   ),
-                  Expanded(
-                    flex: 3,
-                    child: Text(
-                        "Invite friends & share the experience"
-                    ),
+                ),
+                Expanded(
+                  flex: 3,
+                  child: Text(
+                      "Invite friends & share the experience"
                   ),
-                  Expanded(
-                    child: Icon(
-                        Icons.arrow_right
-                    ),
-                  )
-                ],
-              ),
+                ),
+                Expanded(
+                  child: Icon(
+                      Icons.arrow_right
+                  ),
+                )
+              ],
             ),
           ),
           const SizedBox(height: 20.0,),
@@ -89,7 +87,8 @@ class _MoreState extends State<More> {
                 crossAxisCount: 3, mainAxisSpacing: 10.0, crossAxisSpacing: 10.0
               ),
               children: [
-                GestureDetector(
+                CustomCard(
+                  padding: 15.0,
                   onTap: (){
                     Navigator.of(context).push(
                         MaterialPageRoute(
@@ -97,23 +96,22 @@ class _MoreState extends State<More> {
                         )
                     );
                   },
-                  child: CustomCard(
-                    padding: 15.0,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        Icon(
-                          Icons.location_on_outlined,
-                          size: 25.0,
-                        ),
-                        Text(
-                            "Location"
-                        )
-                      ],
-                    ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Icon(
+                        Icons.location_on_outlined,
+                        size: 25.0,
+                      ),
+                      Text(
+                          "Location"
+                      )
+                    ],
                   ),
                 ),
-                GestureDetector(
+
+                CustomCard(
+                  padding: 15.0,
                   onTap: (){
                     Navigator.of(context).push(
                         MaterialPageRoute(
@@ -121,23 +119,22 @@ class _MoreState extends State<More> {
                         )
                     );
                   },
-                  child: CustomCard(
-                    padding: 15.0,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        Icon(
-                          Icons.auto_graph_outlined,
-                          size: 25.0,
-                        ),
-                        Text(
-                            "Stocks & rates"
-                        ),
-                      ],
-                    ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Icon(
+                        Icons.auto_graph_outlined,
+                        size: 25.0,
+                      ),
+                      Text(
+                          "Stocks & rates"
+                      ),
+                    ],
                   ),
                 ),
-                GestureDetector(
+
+                CustomCard(
+                  padding: 15.0,
                   onTap: (){
                     Navigator.of(context).push(
                         MaterialPageRoute(
@@ -145,22 +142,20 @@ class _MoreState extends State<More> {
                         )
                     );
                   },
-                  child: CustomCard(
-                    padding: 15.0,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        Icon(
-                          Icons.gpp_good_outlined,
-                          size: 25.0,
-                        ),
-                        Text(
-                            "Insurance"
-                        )
-                      ],
-                    ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Icon(
+                        Icons.admin_panel_settings_outlined,
+                        size: 25.0,
+                      ),
+                      Text(
+                          "Insurance"
+                      )
+                    ],
                   ),
                 ),
+
                 CustomCard(
                   padding: 15.0,
                   child: Column(
